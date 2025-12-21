@@ -1,0 +1,217 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rebel’s Legacy Publishing</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --rose-pink: #F4E9E9;
+            --dusty-red: #FAF3F2;
+            --charcoal: #2C2E30;
+            --sage: #8C9A8E;
+            --terracotta: #B88A76;
+            --chocolate: #3E2723;
+            --brand-red: #D32F2F;
+        }
+        
+        *, *::before, *::after { box-sizing: border-box; }
+
+        html, body { 
+            margin: 0; padding: 0; width: 100%; overflow-x: hidden; 
+            font-family: 'EB Garamond', serif; background-color: var(--dusty-red); color: var(--charcoal);
+            scroll-behavior: smooth;
+        }
+
+        /* Typography Scaled 25% for 2nd Half */
+        .scaled-content h2 { font-size: 3.75rem !important; margin-bottom: 0.5rem; } 
+        .scaled-content h3 { font-size: 0.85rem !important; letter-spacing: 0.25em; }
+        .scaled-content p { font-size: 1.25rem !important; line-height: 1.6; }
+        .scaled-content .small-p { font-size: 1.1rem !important; }
+        .scaled-content .important-red { font-size: 1.4rem !important; }
+
+        .btn-warm { 
+            border: 1px solid var(--terracotta); color: var(--terracotta);
+            padding: 1rem 2.5rem; display: inline-block; transition: 0.4s;
+            text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.9rem; background: white;
+            cursor: pointer;
+        }
+        .btn-warm:hover { background: var(--terracotta); color: white; }
+
+        .input-field { 
+            width: 100%; background: transparent; border-bottom: 2px solid var(--chocolate); 
+            padding: 0.5rem 0; outline: none; color: var(--chocolate); font-size: 1.2rem; 
+        }
+
+        .split-section { display: flex; flex-direction: column; width: 100%; overflow: hidden; }
+
+        @media (min-width: 1024px) {
+            .split-section { flex-direction: row; }
+            .manifesto-side { flex: 1.2; min-width: 0; }
+            .contact-side { flex: 0.8; min-width: 0; } /* Stretched to cover white space */
+        }
+    </style>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <nav class="fixed top-0 left-0 right-0 z-50 py-3 px-6 md:px-10 bg-[rgba(250,243,242,0.95)] border-b border-black/5">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="tracking-[0.3em] uppercase text-[10px] font-bold">Rebel’s Legacy Publishing</span>
+            <div class="hidden md:flex space-x-8 text-sm italic">
+                <a href="#book" class="hover:text-[--terracotta]">The Book</a>
+                <a href="#imprint" class="hover:text-[--terracotta]">The Imprint</a>
+                <a href="#contact-anchor" class="hover:text-[--terracotta]">Notes & Updates</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="book" class="w-full bg-[#F4E9E9] pt-32 pb-24 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+            <div class="space-y-8">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl leading-tight">Thank You Papa,<br>Thank You Maa,<br><span class="italic text-stone-400 font-light text-3xl md:text-4xl">While I Still Can…</span></h1>
+                
+                <div class="space-y-6 text-lg md:text-xl leading-relaxed max-w-xl">
+                    <p>This book began as a private act — a way to preserve memories, lessons, and gratitude while the people who shaped them are still here. It was written without an audience in mind, and only later considered for publication.</p>
+                    <p class="italic text-[--sage] font-medium">It is a book addressed first to parents, and only then to the world.</p>
+                    <p>Some readers may recognize their own parents in these pages. Others may simply be reminded that time is limited, and words left unspoken do not wait.</p>
+                    <p class="text-base opacity-80">This is not a self-help book. It offers no frameworks, prescriptions, or promised outcomes.</p>
+                </div>
+
+                <div class="pt-6 border-t border-stone-200">
+                    <p class="text-sm mb-4 italic">The book will be made available once editing is complete. There is no fixed release date.</p>
+                    <a href="#contact-anchor" class="btn-warm">Notify Me About This Book →</a>
+                </div>
+            </div>
+            
+            <div class="flex justify-center relative -top-12 lg:sticky lg:top-24">
+                <img src="bkcvr3d.png" alt="Book Cover" class="max-w-xs md:max-w-sm w-full mix-blend-multiply drop-shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <div id="imprint" class="split-section border-t border-black/5 scaled-content">
+        <main class="manifesto-side bg-[#F4E9E9] p-8 md:p-20 border-r border-black/5">
+            <div class="max-w-2xl lg:ml-auto lg:mr-10"> 
+                <h2 class="italic tracking-tight text-[--charcoal]">Rebel’s Legacy Publishing</h2>
+               <div class="subhead-container important-red !text-xs italic uppercase tracking-widest mb-11"> <span>An author-led, independent publishing</span>
+	       <span class="subhead-line-2">imprint</span> </div>
+                
+                <div class="grid md:grid-cols-2 gap-x-12 gap-y-12 mb-16">
+                    <div>
+                        <h3 class="font-bold uppercase tracking-widest mb-4 text-[--terracotta]">How Publishing Works Here</h3>
+                        <p class="small-p">Work published under Rebel’s Legacy is released when it is considered complete in intent and execution — not when visibility, algorithms, or external timelines demand it.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold uppercase tracking-widest mb-4 text-[--terracotta]">On Tools & Integrity</h3>
+                        <p class="small-p">Tools, including AI, may be used to assist with language, structure, or clarity. Responsibility for meaning, accuracy, and voice always remains human.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold uppercase tracking-widest mb-4 text-[--terracotta]">Relationship With Readers</h3>
+                        <p class="small-p">Readers are not treated as customers to be captured, but as individuals choosing to spend time with a piece of work.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold uppercase tracking-widest mb-4 text-[--terracotta]">A Quiet Commitment</h3>
+                        <p class="small-p">Rebel’s Legacy will grow only if the work itself justifies expansion. Until then, restraint is a deliberate choice.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside id="contact-anchor" class="contact-side bg-[#39ff1414] p-8 md:p-20 backdrop-blur-sm">
+            <div class="max-w-xl">
+                <h2 class="italic text-[--charcoal]">Notes & Updates</h2>
+                <p class="important-red mt-6 mb-12 uppercase tracking-widest !text-xs italic">Infrequent. Intentional.</p>
+                
+                <div class="space-y-10 mb-12">
+                    <p class="small-p">This page exists for occasional notes — book updates, release information, or essential clarifications. There will be long silences between entries.</p>
+                    
+                    <div>
+                        <h3 class="font-bold uppercase tracking-widest mb-4 text-[--terracotta]">Stay Connected</h3>
+                        <p class="small-p">If you would like to be informed when the book is released, or when new writing genuinely exists, you may leave your email below.</p>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/xjgbrovn" method="POST" id="contact-form" class="space-y-8">
+                    <div>
+                        <label class="text-[10px] uppercase tracking-widest font-bold opacity-60">Email Address</label>
+                        <input type="email" name="email" required placeholder="[ Email Address ]" class="input-field">
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <p class="important-red !text-sm italic">No newsletters. No promotions. No automated sequences.</p>
+                        <button type="submit" class="btn-warm w-full">Notify Me When There’s Something Real</button>
+                        <p class="important-red !text-sm border-t border-black/10 pt-4">Silence between updates is not absence. It is intent.</p>
+                    </div>
+                </form>
+                <div id="form-status" class="hidden mt-6"></div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="py-12 text-center bg-white border-t border-black/5">
+        <p class="text-[11px] tracking-[0.4em] uppercase font-bold text-[--chocolate] mb-4">Rebel’s Legacy Publishing</p>
+        <a href="javascript:void(0)" onclick="togglePrivacy()" class="text-[9px] uppercase tracking-[0.2em] text-stone-500 hover:text-[--brand-red] transition-colors cursor-pointer">Privacy & Copyright</a>
+    </footer>
+
+    <div id="privacy-box" class="hidden fixed inset-0 z-[9999] bg-[#FAF3F2] p-6 md:p-20 overflow-y-auto">
+        <div class="max-w-2xl mx-auto">
+            <button onclick="togglePrivacy()" class="text-[10px] uppercase tracking-widest mb-10 border border-stone-300 px-6 py-2 bg-white">Close [x]</button>
+            <h2 class="text-4xl italic mb-10 text-[--chocolate]">Privacy & Copyright</h2>
+            
+            <div class="text-lg space-y-10 text-[--chocolate] leading-relaxed">
+                <div>
+                    <h3 class="text-[--brand-red] uppercase tracking-widest text-[10px] font-bold mb-4">The Living Pact</h3>
+                    <p>We know the furious pace of today’s living. We understand the desperation of paying the next bill while keeping body, mind, and spirit together, not forgetting the family. We appreciate all readers connecting with us now, and the team of writers, illustrators, and editors who will become a part of this journey.</p>
+                </div>
+                <div>
+                    <h3 class="text-[--brand-red] uppercase tracking-widest text-[10px] font-bold mb-4">Originality & The Human Touch</h3>
+                    <p>We believe in the honest sharing of ideas and authored "original" work. Even where our authors have utilized AI as a tool, we require every soul intending to associate with us to ensure a "human touch" during proofreading and editing.</p>
+                </div>
+                <div>
+                    <h3 class="text-[--brand-red] uppercase tracking-widest text-[10px] font-bold mb-4">The Sanctity of Labor</h3>
+                    <p>Unauthorized reproduction hurts the authors and writers. It fails to fairly compensate them for their time and efforts. To us at Rebel’s Legacy Publishing, the theft of a creator’s labor is an unforgivable crime.</p>
+                </div>
+            </div>
+            
+            <button onclick="togglePrivacy()" class="btn-warm mt-10">Back to Site</button>
+        </div>
+    </div>
+
+    <script>
+        function togglePrivacy() { document.getElementById('privacy-box').classList.toggle('hidden'); }
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+
+        if (form) {
+            form.onsubmit = async (e) => {
+                e.preventDefault();
+                const btn = form.querySelector('button');
+                btn.innerHTML = "Submitting...";
+                btn.disabled = true;
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    if (response.ok) {
+                        form.classList.add('hidden');
+                        status.classList.remove('hidden');
+                        status.innerHTML = "<p class='important-red text-2xl italic'>Noted. Thank you.</p>";
+                    } else { throw new Error(); }
+                } catch (err) {
+                    alert("Submission failed.");
+                    btn.disabled = false;
+                    btn.innerHTML = "Notify Me";
+                }
+            };
+        }
+    </script>
+</body>
+</html>
