@@ -9,6 +9,7 @@
     <title>Rebel’s Legacy Publishing</title>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <style>
         :root {
             --rose-pink: #F4E9E9;
@@ -148,6 +149,7 @@
                         <button type="submit" class="btn-warm w-full">Notify Me When There’s Something Real</button>
                         <p class="important-red !text-sm border-t border-black/10 pt-4">Silence between updates is not absence. It is intent.</p>
                     </div>
+					<div class="cf-turnstile" data-sitekey="0x4AAAAAACH3zbzUhBwers_T"></div>
                 </form>
                 <div id="form-status" class="hidden mt-6"></div>
             </div>
@@ -214,4 +216,5 @@
         }
     </script>
 </body>
+
 </html>
